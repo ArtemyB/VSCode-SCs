@@ -1,0 +1,26 @@
+{
+    "name": "scs",
+    "displayName": "SCS Language Support",
+    "description": "OSTIS SCs",
+    "version": "0.0.1",
+    "publisher": "OSTIS-Guy",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scs",
+            "aliases": ["SCs", "scs"],
+            "extensions": [".scs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scs",
+            "scopeName": "source.scs",
+            "path": "./syntaxes/scs_msifeed.tmLanguage"
+        }]
+    }
+}
