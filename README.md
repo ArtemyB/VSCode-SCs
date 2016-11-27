@@ -51,6 +51,11 @@ Initial release: just SCs syntax coloring and some braces configuration.
 
 -----------------------------------------------------------------------------------------------------------
 
+## Contributors
+
+* [Peter Gorban](https://github.com/msifd)
+* [Artemy Bordushko](https://github.com/ArtemyB)
+
 **Enjoy!**
 
 [1]: https://github.com/siegebell/vsc-prettify-symbols-mode
