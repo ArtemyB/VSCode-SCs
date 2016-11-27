@@ -11,7 +11,7 @@ SCs language support.
 * Syntax coloring.
 
 
-![syntax coloring example](http://i.imgur.com/SyqI18K.png)
+![syntax coloring example](http://i.imgur.com/3Xwlwm6.png)
 
 ## Requirements
 
