@@ -9,7 +9,7 @@ For more pretty code look try using one of the ligatured fonts (e.g. Fira Code, 
 SCs language support.
 
 * Syntax coloring.
-
+* Code snippets.
 
 ![syntax coloring example](http://i.imgur.com/3Xwlwm6.png)
 
@@ -48,6 +48,10 @@ P.S.: There could be also some troubles with ⇒ symbol (no ligature for it) so 
 ### 0.0.1
 
 Initial release: just SCs syntax coloring and some braces configuration.
+
+### 0.0.2
+
+Some snippets added.
 
 -----------------------------------------------------------------------------------------------------------
 
