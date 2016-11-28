@@ -1,0 +1,90 @@
+{
+    "Absolute concept": {
+		"prefix": "absc",
+		"body": [
+			"${sysId}",
+			"	=> nrel_main_idtf:",
+			"		[${enId}](*<- lang_en;;*);",
+			"		[${ruId}](*<- lang_ru;;*);;"
+		],
+		"description": "Absolute concept (not ended)"
+	},
+	"NRel concept": {
+		"prefix": "nrelC",
+		"body": [
+			"${sysId}",
+			"	=> nrel_main_idtf:",
+			"		[${enId}*](*<- lang_en;;*);",
+			"		[${ruId}*](*<- lang_ru;;*);",
+			"	<- sc_node_norole_relation;",
+			"	<- sc_type_norole_relation;",
+			"	<- binary_relation;;"
+		],
+		"description": "Norole relation concept."
+	},
+	"RRel concept": {
+		"prefix": "rrelC",
+		"body": [
+			"${sysId}",
+			"	=> nrel_main_idtf:",
+			"		[${enId}'](*<- lang_en;;*);",
+			"		[${ruId}'](*<- lang_ru;;*);",
+			"	<- sc_node_role_relation;",
+			"	<- sc_type_role_relation;",
+			"	<- binary_relation;;"
+		],
+		"description": "Role relation concept."
+	},
+	"Definition": {
+		"prefix": "defin",
+		"body": [
+			"	<- rrel_key_sc_element:...",
+			"	(*",
+			"		<- sc_definition;;",
+			"		=> nrel_main_idtf: [Definition (${enId})](*<- lang_en;;*);;",
+			"		=> nrel_main_idtf: [Определение (${ruId})](*<- lang_ru;;*);;",
+			"		<= nrel_sc_text_translation:...",
+			"			(*",
+			"				-> rrel_example:",
+			"					[${text}]",
+			"					(*",
+			"						<- lang_ru;;",
+			"						=> nrel_format: format_html;;",
+			"					*);;",
+			"				*);;",
+			"	*);"
+		],
+		"description": "\"Definition\" construction."
+	},
+    "Statement": {
+		"prefix": "statm",
+		"body": [
+			"	<- rrel_key_sc_element:...",
+			"	(*",
+			"		<- sc_statement;;",
+			"		=> nrel_main_idtf: [${enId}](*<- lang_en;;*);;",
+			"		=> nrel_main_idtf: [${ruId}](*<- lang_ru;;*);;",
+			"		<= nrel_sc_text_translation:...",
+			"			(*",
+			"				-> rrel_example:",
+			"					[${text}]",
+			"					(*",
+			"						<- lang_ru;;",
+			"						=> nrel_format: format_html;;",
+			"					*);;",
+			"				*);;",
+			"	*);"
+		],
+		"description": "\"Statement\" construction."
+	},
+	"Using constants": {
+		"prefix": "usconst",
+		"body": [
+			"	<= nrel_using_constants:",
+			"	{",
+			"		${const1}",
+			"	};"
+		],
+		"description": "\"Using constants\" construction"
+	}
+}
